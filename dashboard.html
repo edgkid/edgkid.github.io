@@ -18,81 +18,94 @@
 
 </head>
 
+<style>
+    @media (max-width: 768px){
+        .table thead{
+            display: none;
+        }   
+        
+        .table, .table tbody, .table tr, .table td{ 
+            display: block;
+            width: 100%;
+        }
+    }
+</style>
+
 <body>
     <div id="wrapper">
-    <nav class="navbar-default navbar-static-side" role="navigation">
-        <div class="sidebar-collapse">
-            <ul class="nav metismenu" id="side-menu">
-                <li class="nav-header">
-                    <div class="dropdown profile-element">
-                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                            <span class="block m-t-xs font-bold">David Williams</span>
-                            <span class="text-muted text-xs block">Analista</span>
-                        </a>
-                    </div>
-                    <div class="logo-element">
-                        SIC+
-                    </div>
-                </li>
-                <li>
-                    <a href="dashboard.html"><i class="fa fa-diamond"></i> <span class="nav-label">Home</span></a>
-                </li>
-                <li>
-                    <a href="atc.html"><i class="fa fa-diamond"></i> <span class="nav-label">ATC</span></a>
-                </li>
-                <li>
-                    <a href="clientePrincipal.html"><i class="fa fa-diamond"></i> <span class="nav-label">Clientes</span></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-th-large"></i> <span class="nav-label">Solicitudes</span> <span class="fa arrow"></span></a>
-                    <ul class="nav nav-second-level">
-                        <li><a href="sale.html">Ventas</a></li>
-                        <li ><a href="#">Cambio de Banco</a></li>
-                        <li ><a href="#">Cambio de Equipos</a></li>
-                        <li><a href="#">Cambio de SIMCARD</a></li>
-                        <li><a href="#">Reactivación</a></li>
-                        <li><a href="#">Reparación</a></li>
-                        <li><a href="#">Traspaso</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-th-large"></i> <span class="nav-label">Inventario</span> <span class="fa arrow"></span></a>
-                    <ul class="nav nav-second-level">
-                        <li ><a href="order.html">Pedido</a></li>
-                        <li><a href="stock.html">Inventario</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-th-large"></i> <span class="nav-label">Activación</span> <span class="fa arrow"></span></a>
-                    <ul class="nav nav-second-level">
-                        <li><a href="assign.html">Asignación de Equipos</a></li>
-                        <li ><a href="load_terminal.html">Solicitud de Parametros</a></li>
-                        <li ><a href="test.html">Pruebas</a></li>
-                        <li><a href="deliver_item.html">Entrega de Equipos</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-th-large"></i> <span class="nav-label">Pagos</span> <span class="fa arrow"></span></a>
-                    <ul class="nav nav-second-level">
-                        <li><a href="payment_principal.html">Pago de Solicitudes</a></li>
-                        <li><a href="payment_other.html">Otros Pagos</a></li>
-                        <li ><a href="payment_valid.html">Validar Pagos</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-th-large"></i> <span class="nav-label">Cobranza</span> <span class="fa arrow"></span></a>
-                    <ul class="nav nav-second-level">
-                        <li><a href="#">Domiciliar Cobros</a></li>
-                        <li ><a href="#">Conciliar Cobros</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-diamond"></i> <span class="nav-label">Configuración</span></a>
-                </li>
-            </ul>
-
-        </div>
-    </nav>
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav metismenu" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element">
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span class="block m-t-xs font-bold">David Williams</span>
+                                <span class="text-muted text-xs block">Analista</span>
+                            </a>
+                        </div>
+                        <div class="logo-element">
+                            SIC+
+                        </div>
+                    </li>
+                    <li>
+                        <a href="dashboard.html"><i class="fa fa-home"></i> <span class="nav-label">Home</span></a>
+                    </li>
+                    <li>
+                        <a href="atc.html"><i class="fa fa-headphones"></i> <span class="nav-label">ATC</span></a>
+                    </li>
+                    <li>
+                        <a href="clientePrincipal.html"><i class="fa fa-group"></i> <span class="nav-label">Clientes</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-pencil-square-o"></i> <span class="nav-label">Solicitudes</span> <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="sale.html">Ventas</a></li>
+                            <li ><a href="#">Cambio de Banco</a></li>
+                            <li ><a href="#">Cambio de Equipos</a></li>
+                            <li><a href="#">Cambio de SIMCARD</a></li>
+                            <li><a href="#">Reactivación</a></li>
+                            <li><a href="#">Reparación</a></li>
+                            <li><a href="#">Traspaso</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-dropbox"></i> <span class="nav-label">Inventario</span> <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li ><a href="order.html">Pedido</a></li>
+                            <li><a href="stock.html">Inventario</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-check-square"></i> <span class="nav-label">Activación</span> <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="assign.html">Asignación de Equipos</a></li>
+                            <li ><a href="load_terminal.html">Solicitud de Parametros</a></li>
+                            <li ><a href="test.html">Pruebas</a></li>
+                            <li><a href="deliver_item.html">Entrega de Equipos</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-money"></i> <span class="nav-label">Pagos</span> <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="payment_principal.html">Pago de Solicitudes</a></li>
+                            <li><a href="payment_other.html">Otros Pagos</a></li>
+                            <li ><a href="payment_valid.html">Validar Pagos</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-calculator"></i> <span class="nav-label">Cobranza</span> <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="#">Domiciliar Cobros</a></li>
+                            <li ><a href="#">Conciliar Cobros</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-gear"></i> <span class="nav-label">Configuración</span></a>
+                    </li>
+                </ul>
+    
+            </div>
+        </nav>
 
         <div id="page-wrapper" class="gray-bg">
         <div class="row border-bottom">
