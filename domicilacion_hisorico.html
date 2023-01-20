@@ -55,13 +55,13 @@
                     <li>
                         <a href="menu.html"><i class="fa fa-home"></i> <span class="nav-label">Home</span></a>
                     </li>
-                    <li>
+                    <!--<li>
                         <a href="atc.html"><i class="fa fa-headphones"></i> <span class="nav-label">ATC</span></a>
-                    </li>
+                    </li>-->
                     <li>
                         <a href="clientePrincipal.html"><i class="fa fa-group"></i> <span class="nav-label">Clientes</span></a>
                     </li>
-                    <li>
+                    <!--<li>
                         <a href="#"><i class="fa fa-pencil-square-o"></i> <span class="nav-label">Solicitudes</span> <span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li><a href="sale.html">Ventas</a></li>
@@ -88,7 +88,7 @@
                             <li ><a href="test.html">Pruebas</a></li>
                             <li><a href="deliver_item.html">Entrega de Equipos</a></li>
                         </ul>
-                    </li>
+                    </li>-->
                     <li>
                         <a href="#"><i class="fa fa-money"></i> <span class="nav-label">Pagos</span> <span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
@@ -100,13 +100,14 @@
                     <li>
                         <a href="#"><i class="fa fa-calculator"></i> <span class="nav-label">Cobranza</span> <span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                            <li><a href="#">Domiciliar Cobros</a></li>
-                            <li ><a href="#">Conciliar Cobros</a></li>
+                            <li><a href="domiciliar.html">Domiciliar Cobros</a></li>
+                            <li ><a href="conciliar.html">Conciliar Cobros</a></li>
+                            <li ><a href="domicilacion_hisorico.html">Historial</a></li>
                         </ul>
                     </li>
-                    <li>
+                    <!--<li>
                         <a href="#"><i class="fa fa-gear"></i> <span class="nav-label">Configuración</span></a>
-                    </li>
+                    </li>-->
                 </ul>
     
             </div>
@@ -134,6 +135,85 @@
 
         <div class="wrapper wrapper-content animated fadeInRight">
 
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="ibox ">
+                        <div class="ibox-title">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <h5>Vista previo del Archivo # 449 </h5>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-2">
+                                    <select name="choice" class="form-control">
+                                        <option value="0">Seleccione estatus</option>
+                                        <option value="1" selected>Pendiente</option>
+                                        <option value="2">Por Conciliar</option>
+                                        <option value="2" >Cancelado</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-2">
+                                    <select name="choice" class="form-control">
+                                        <option value="0">Seleccionar Banco</option>
+                                        <option value="1" selected>Banco de Venezuela</option>
+                                        <option value="2">Venezolano de Crédito</option>
+                                        <option value="2" >Mercantil</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="ibox-content">
+
+                            <table class="footable table table-stripped toggle-arrow-tiny">
+                                <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Generación</th>
+                                    <th>Respuesta</th>
+                                    <th>Lineas</th>
+                                    <th>Enviado</th>
+                                    <th>Cobrado</th>
+                                    <th>Concepto</th>
+                                    <th>Acciones</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>519</td>
+                                    <td>08/18/2022 5:59 pm </td>
+                                    <td></td>
+                                    <td>8</td>
+                                    <td>$10.63</td>
+                                    <td></td>
+                                    <td>Prueba</td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-white">
+                                                <i class="fa fa-dowload"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-white" data-toggle="modal" data-target="#myModal">
+                                                <i class="fa fa-trash"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                                <tfoot>
+                                <tr>
+                                    <td colspan="5">
+                                        <ul class="pagination float-right"></ul>
+                                    </td>
+                                </tr>
+                                </tfoot>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
             
         </div>
 
@@ -149,6 +229,26 @@
         </div>
         </div>
 
+    <!-- Modal -->
+    <div class="modal inmodal" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content animated bounceInRight">
+                <div class="modal-header">
+                    <h4 class="modal-title">¿Esta seguro que desea cancelar el archivo?</h4>
+                </div>
+                <div class="modal-body">
+
+                    <p>Se cancelerá el archivo #519</p>
+                
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-white" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
 
 
     <!-- Mainly scripts -->
