@@ -4810,7 +4810,7 @@ img.circle-border {
   text-align: center;
   background-color: #1ab394;
 }
-.login-panel {
+.index-panel {
   margin-top: 25%;
 }
 .icons-box h3 {
@@ -5665,7 +5665,7 @@ body.mini-navbar.fixed-sidebar .logo-element {
   text-align: right;
   width: 15%;
 }
-/* ERROR & LOGIN & LOCKSCREEN*/
+/* ERROR & index & LOCKSCREEN*/
 .middle-box {
   max-width: 400px;
   z-index: 100;
@@ -5676,10 +5676,10 @@ body.mini-navbar.fixed-sidebar .logo-element {
   width: 200px;
   padding-top: 110px;
 }
-.loginscreen.middle-box {
+.indexscreen.middle-box {
   width: 300px;
 }
-.loginColumns {
+.indexColumns {
   max-width: 800px;
   margin: 0 auto;
   padding: 100px 20px 20px 20px;
